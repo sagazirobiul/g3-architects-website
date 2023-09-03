@@ -153,6 +153,9 @@ main {
     padding: 45px 30px;
     color: #FFF;
     text-align: center;
+    position: relative;
+    left: -60px;
+    top: -110px;
 }
 
 .ten-year-badge h2 {
@@ -214,6 +217,17 @@ main {
     filter: grayscale(100%);
 }
 
+footer p{
+    max-width: 1440px;
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.15rem;
+    color: #727272;
+}
 
 /* Responsive Styles */
 /* Mobile devices */
@@ -225,8 +239,20 @@ main {
     nav,
     .teams-container,
     .facts-card-container,
-    .sponsors-img-container {
+    .sponsors-img-container,
+    .features {
         flex-direction: column;
+    }
+
+    .features img {
+        width: 100%;
+    }
+
+    .ten-year-badge {
+        position: static;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
     }
 
     .teams-img-container {
@@ -249,12 +275,17 @@ main {
         padding: 50px;
     }
 
-    nav {
+    nav,
+    .features {
         flex-direction: column;
     }
 
     .teams-container {
         flex-direction: column-reverse;
+    }
+
+    .features img {
+        width: 90%;
     }
 
     .facts-card-container,
